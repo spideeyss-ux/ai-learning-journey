@@ -1,15 +1,23 @@
-print("🤖 Welcome to AI Mini Chat")
+print("🤖 AI Chatbot Started (type 'exit' to stop)")
 
-name = input("Enter your name: ")
-print("Hello", name)
+while True:
+    user_input = input("You: ").lower()
 
-feeling = input("How are you feeling today? ")
+    if user_input == "exit":
+        print("Bot: Goodbye! 👋")
+        break
 
-if feeling.lower() == "happy":
-    print("That's great! Keep going 💪")
-elif feeling.lower() == "sad":
-    print("Don't worry, better days are coming ❤️")
-else:
-    print("Nice! Stay focused and keep improving 🚀")
+    elif "hello" in user_input:
+        print("Bot: Hello! How can I help you?")
 
-print("Thanks for using this program 😎")
+    elif "how are you" in user_input:
+        print("Bot: I'm just code, but I'm doing great 😄")
+
+    elif "sad" in user_input:
+        print("Bot: Don't worry, everything will be okay ❤️")
+
+    elif "happy" in user_input:
+        print("Bot: That's awesome! Keep smiling 😎")
+
+    else:
+        print("Bot: I didn't understand that yet 🤖")
